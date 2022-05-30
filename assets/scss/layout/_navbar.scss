@@ -1,0 +1,48 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $nav;
+    padding: 10px 30px;
+    &__logo{
+        padding-top: 5px;
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 5.6rem;
+            height: 1.2rem;
+        }
+        i{
+            margin-top: 2px;
+        }
+    }
+    &__search{
+        width: 520px;
+        display: flex;
+        justify-content: start;
+    }
+    &__input{
+        input{
+            width: 450px;
+            height: 22px;
+
+        }
+        i{
+
+            border: 1px solid grey;
+            font-size: 0.85rem;
+            padding: 5px 20px;
+        }
+    }
+    &__buttons{
+
+        padding-top: 6px;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links{
+    }
+}

@@ -1,0 +1,52 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 10px 30px;
+}
+.navbar__logo {
+  padding-top: 5px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__logo img {
+  width: 5.6rem;
+  height: 1.2rem;
+}
+.navbar__logo i {
+  margin-top: 2px;
+}
+.navbar__search {
+  width: 520px;
+  display: flex;
+  justify-content: start;
+}
+.navbar__input input {
+  width: 450px;
+  height: 22px;
+}
+.navbar__input i {
+  border: 1px solid grey;
+  font-size: 0.85rem;
+  padding: 5px 20px;
+}
+.navbar__buttons {
+  padding-top: 6px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-solid {
+  color: #555555;
+  font-size: 1.1rem;
+}
+
+body {
+  background-color: #E6EDF1;
+}
+body .container {
+  width: 900px;
+  margin: 100px 250px;
+}/*# sourceMappingURL=main.css.map */

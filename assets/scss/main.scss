@@ -1,0 +1,10 @@
+@import 'variables/colors';
+@import 'layout/navbar';
+@import 'components/icons';
+body{
+background-color: $main;
+.container{
+    width: 900px;
+    margin: 100px 250px;
+}
+}

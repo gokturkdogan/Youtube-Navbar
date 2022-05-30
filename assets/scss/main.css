@@ -21,16 +21,24 @@
 .navbar__search {
   width: 520px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+}
+.navbar__input {
+  display: flex;
+  justify-content: space-between;
 }
 .navbar__input input {
   width: 450px;
   height: 22px;
+  border: 2px solid #DCDCDC;
+  margin-top: 0;
 }
 .navbar__input i {
-  border: 1px solid grey;
+  border: 2px solid #DCDCDC;
   font-size: 0.85rem;
   padding: 5px 20px;
+  background-color: #F7F7F7;
+  color: #555555;
 }
 .navbar__buttons {
   padding-top: 6px;

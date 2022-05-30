@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Lato:wght@300&family=Nunito:wght@300;400&family=Roboto:wght@300;500&family=Ubuntu:wght@300;400;700&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/59fe93ed09.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/scss/main.css">
     <title>Youtube-Navbar</title>
@@ -29,11 +32,22 @@
                     <div class="dropdown">
                         <button class="dropbtn"><i class="fa-solid fa-bell"></i></button>
                         <div class="dropdown-content">
-                            <a href="#">Kategori 1</a>
-                            <a href="#">Kategori 2</a>
-                            <a href="#">Kategori 3</a>
-                            <a href="#">Kategori 4</a>
-                            <a href="#">Kategori 5</a>
+                            <div class="notification">
+                                <header class="notification__header">
+                                    <i class="fa-solid fa-bell notificationLeft"></i>
+                                    <h5>Notifications</h5>
+                                    <i class="fa-solid fa-gear notificationRight"></i>
+                                </header>
+                                <div class="notification__body">
+                                    <div class="notification__item"><img src="assets/images/person1.jpg" alt=""> <p><strong>Dany Milles</strong>commented on your photo</p></div>
+                                    <div class="notification__item"><img src="assets/images/person2.jpg" alt=""> <p><strong>Elly Woodworth</strong>posted a photo on your wall</p></div>
+                                    <div class="notification__item"><img src="assets/images/person4.jpg" alt=""> <p><strong>Kate Stockton</strong>just mentioned you in her new post</p></div>
+                                </div>
+                                <footer class="notification__footer">
+                                    <h5>See all activity</h5>
+                                </footer>
+                            </div>
+
                         </div>
                     </div>
                     <a href="#" class="navbar__link"><i class="fa-solid fa-user"></i></a>

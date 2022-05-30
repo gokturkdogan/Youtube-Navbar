@@ -1,6 +1,8 @@
 @import 'variables/colors';
 @import 'layout/navbar';
+@import 'layout/notifications';
 @import 'components/icons';
+@import 'components/buttons';
 body{
 background-color: $main;
 .container{

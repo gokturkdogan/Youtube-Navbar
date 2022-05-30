@@ -16,8 +16,7 @@
             height: 1.2rem;
         }
 
-        i {
-        }
+        i {}
     }
 
     &__search {
@@ -30,6 +29,7 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 3px;
+
         input {
             width: 450px;
             height: 22px;
@@ -42,7 +42,7 @@
             font-size: 0.85rem;
             padding: 5px 20px;
             color: $searchicon;
-            
+
             background-color: $serachiconbg;
         }
     }

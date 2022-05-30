@@ -1,72 +1,83 @@
-.dropdown{
-    position: relative;
-    display: inline-block;
-&:hover .dropdown-content{
-display: block;
-}
-.dropdown-content{
-  display: none;
-  font-family: 'Nunito';
-  position: absolute;
-  background-color: $nav;
-  width: 300px;
-  z-index: 1;
-  border-radius: 10px;
-  .notification{
-    &__header{
-      display: flex;
-            justify-content: space-between;
-            padding-top: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 0px;
-      h5{
-        color: $nottitle;
-        margin-top: 13px;
-      }
-      i{
-        margin-top: 15px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none;
+    font-family: 'Nunito';
+    position: absolute;
+    background-color: $nav;
+    width: 300px;
+    z-index: 1;
+    border-radius: 10px;
+
+    .notification {
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+
+        h5 {
+          color: $nottitle;
+          margin-top: 13px;
+        }
+
+        i {
+          margin-top: 15px;
+        }
+
       }
 
-    }
-    &__body{
+      &__body {}
 
-    }
-    &__item{
-      display: flex;
-      border-top: 1px solid $notitemborder;
-      padding-top:10px;
-      padding-left: 15px;
-      padding-right: 25px;
-      padding-bottom: 10px;
-      font-size: 0.75rem;
-      font-weight: 500;
-      &:hover{
-        background-color: $notitemhover;
+      &__item {
+        display: flex;
+        border-top: 1px solid $notitemborder;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+        font-size: 0.75rem;
+        font-weight: 500;
+
+        &:hover {
+          background-color: $notitemhover;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 55px;
+          margin-right: 15px;
+          margin-top: 5px;
+        }
+
+        strong {
+          color: #000;
+          margin-right: 2px;
+        }
+
+        p {
+          color: $notp;
+        }
       }
-      img{
-        width: 40px;
-            height: 40px;
-            border-radius: 55px;
-            margin-right: 15px;
-            margin-top: 5px;
+
+      &__footer {
+        border-top: 1px solid $notitemborder;
+        display: flex;
+        justify-content: center;
+
+        h5 {
+          color: $notleft;
+        }
       }
-      strong{
-        color: #000;
-        margin-right: 2px;
-      }
-      p{
-        color: $notp;
-      }
-    }
-    &__footer{
-      border-top: 1px solid $notitemborder;
-display: flex;
-justify-content: center;
-h5{
-  color: $notleft;
-}
     }
   }
-}
 }

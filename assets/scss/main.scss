@@ -3,10 +3,12 @@
 @import 'layout/notifications';
 @import 'components/icons';
 @import 'components/buttons';
-body{
-background-color: $main;
-.container{
-    width: 900px;
-    margin: 100px 250px;
-}
+
+body {
+    background-color: $main;
+
+    .container {
+        width: 900px;
+        margin: 100px 250px;
+    }
 }

@@ -134,6 +134,7 @@
 .dropbtn {
   background-color: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 
 body {

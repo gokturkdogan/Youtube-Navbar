@@ -1,13 +1,22 @@
-.fa-solid{
+//navbar
+.fa-solid {
     color: $icons;
     font-size: 1.1rem;
 }
-.notificationLeft{
+
+//notifications
+.notificationLeft {
     color: $notleft;
     font-size: 1rem;
 }
-.notificationRight{
+
+.notificationRight {
     color: $notright;
     font-size: 1rem;
-    
+}
+
+//sidebar
+.sideBarIcon {
+    color: $sidebaricon;
+    font-size: 12px;
 }

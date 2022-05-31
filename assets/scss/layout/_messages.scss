@@ -1,0 +1,170 @@
+.dropdownMessages {
+    position: relative;
+    display: inline-block;
+
+    .dropdown-content {
+        margin-right: 20px;
+        font-family: 'Nunito';
+        position: absolute;
+        z-index: 1;
+        display: none;
+
+        .message {
+            width: 300px;
+            box-shadow: 5px 5px 5px #aeb3b6;
+            border-radius: 10px;
+            margin-top: 40px;
+            background-color: $nav;
+
+
+            &::after {
+                content: " ";
+                position: absolute;
+                right: 268px;
+                top: 30px;
+                border-top: none;
+                border-right: 15px solid transparent;
+                border-left: 15px solid transparent;
+                border-bottom: 15px solid $nav;
+            }
+
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 0px;
+
+                h5 {
+                    color: $nottitle;
+                    margin-top: 13px;
+                }
+
+                i {
+                    margin-top: 15px;
+                }
+            }
+
+            &__body {
+                border-top: 1px solid $notitemborder;
+                border-bottom: 1px solid $notitemborder;
+                padding-top: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 12px;
+            }
+
+            &__received {
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            &__reciever {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 55px;
+
+                }
+            }
+
+            &__receiveContent {
+                padding-left: 10px;
+            }
+
+            &__receiveLine {
+                display: flex;
+                justify-content: flex-start;
+                font-weight: 500;
+
+                p {
+                    border: 1px solid $sendtextborder;
+                    font-size: 0.70rem;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: fit-content;
+                    margin-top: 0px;
+                }
+
+                span {
+                    color: $sendtime;
+                    font-size: 0.55rem;
+                    margin-top: 15px;
+                    margin-left: 5px;
+                }
+            }
+
+            &__sent {
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            &__sentContent {
+                margin-right: 10px;
+            }
+
+            &__sentLine {
+                display: flex;
+                font-weight: 500;
+
+                span {
+                    color: $sendtime;
+                    font-size: 0.55rem;
+                    margin-top: 12px;
+                    margin-left: 5px;
+                    margin-right: 10px;
+                }
+
+                p {
+                    background-color: $sendtextbg;
+                    font-size: 0.70rem;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: fit-content;
+                    margin-top: 0px;
+                }
+            }
+
+            &__sender {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 55px;
+                }
+            }
+
+            &__footer {
+                padding: 20px 25px 21px 25px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__type {
+                font-weight: 100;
+                font-size: 12px;
+                color: $footerplus;
+
+                i {
+                    margin-right: 10px;
+                    color: $footerplus;
+                    font-size: 14px;
+                }
+            }
+
+            &__send {
+                i {
+                    color: $notleft;
+                }
+
+            }
+
+        }
+    }
+
+    .-open {
+        display: block;
+    }
+}

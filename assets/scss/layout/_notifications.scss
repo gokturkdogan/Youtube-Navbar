@@ -1,4 +1,4 @@
-.dropdown {
+.dropdownNotifications {
   position: relative;
   display: inline-block;
 
@@ -7,17 +7,30 @@
   }
 
   .dropdown-content {
+    margin-right: 20px;
     display: none;
     font-family: 'Nunito';
     position: absolute;
-    width: 300px;
     z-index: 1;
 
+
     .notification {
+      width: 300px;
       box-shadow: 5px 5px 5px #aeb3b6;
       border-radius: 10px;
-      margin-top: 30px;
+      margin-top: 40px;
       background-color: $nav;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        right: 268px;
+        top: 30px;
+        border-top: none;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-bottom: 15px solid $nav;
+      }
 
       &__header {
         display: flex;

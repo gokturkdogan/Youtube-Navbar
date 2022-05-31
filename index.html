@@ -16,32 +16,59 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <div class="navbar__logo">                
-                <div class="dropdown">
-                    <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-                    <div class="dropdown-content">
-                        <div class="notification">
-                            <header class="notification__header">
-                                <i class="fa-solid fa-bell notificationLeft"></i>
-                                <h5>Notifications</h5>
-                                <i class="fa-solid fa-gear notificationRight"></i>
-                            </header>
-                            <div class="notification__body">
-                                <div class="notification__item"><img src="assets/images/person1.jpg" alt="">
-                                    <p><strong>Dany Milles</strong>commented on your photo</p>
-                                </div>
-                                <div class="notification__item"><img src="assets/images/person2.jpg" alt="">
-                                    <p><strong>Elly Woodworth</strong>posted a photo on your wall</p>
-                                </div>
-                                <div class="notification__item"><img src="assets/images/person4.jpg" alt="">
-                                    <p><strong>Kate Stockton</strong>just mentioned you in her new post</p>
+            <div class="navbar__logo">
+                <div class="dropdownSidebar">
+                    <button onclick="mySideBarFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                    <div id="mySideBarDropdown" class="dropdown-content">
+                        <div class="sideBar">
+                            <div class="sideBar__body">
+                                <ul class="sideBar__menu">
+                                    <li class="sideBar__item"><a href="#" class="sideBar__link"><i
+                                                class="fa-solid fa-house sideBarIcon"></i>
+                                            <p class="sideBar__text">Dashboard</p>
+                                        </a></li>
+                                    <li class="sideBar__item"><a href="#" class="sideBar__link"><i
+                                                class="fa-solid fa-plus sideBarIcon"></i>
+                                            <p class="sideBar__text">Calendar</p>
+                                        </a></li>
+                                    <li class="sideBar__item"><a href="#" class="sideBar__link"><i
+                                                class="fa-solid fa-user sideBarIcon"></i>
+                                            <p class="sideBar__text">Clients</p>
+                                        </a></li>
+                                    <li class="sideBar__item"><a href="#" class="sideBar__link"><i
+                                                class="fa-solid fa-paw sideBarIcon"></i>
+                                            <p class="sideBar__text">Animals</p>
+                                        </a></li>
+                                    <li class="sideBar__item"><a href="#" class="sideBar__link"><i
+                                                class="fa-solid fa-square-poll-horizontal sideBarIcon"></i>
+                                            <p class="sideBar__text">Stocks</p>
+                                        </a></li>
+                                    <li class="sideBar__item"><a href="#" class="sideBar__link"><i
+                                                class="fa-solid fa-arrow-trend-up sideBarIcon"></i>
+                                            <p class="sideBar__text">Raport & Finance</p>
+                                        </a></li>
+                                    <li class="sideBar__item"><a href="#" class="sideBar__link"><i
+                                                class="fa-solid fa-gear sideBarIcon"></i>
+                                            <p class="sideBar__text">Settings</p>
+                                        </a></li>
+                                </ul>
+                                <div class="sideBar__getStarted">
+                                    <img src="assets/images/cat.jpg">
+                                    <strong>First Steps</strong>
+                                    <p>Costumize your dashboard and learn about our features</p>
+                                    <span>Get Started</span>
                                 </div>
                             </div>
-                            <footer class="notification__footer">
-                                <h5>See all activity</h5>
+                            <footer class="sideBar__footer">
+                                <div class="sideBar__userImage">
+                                    <img src="assets/images/admin.jpg">
+                                </div>
+                                <div class="sideBar__userInfo">
+                                    <strong>Sylwia Weller</strong>
+                                    <span>Admin</span>
+                                </div>
                             </footer>
                         </div>
-
                     </div>
                 </div>
                 <img src="assets/images/logo.png">
@@ -54,8 +81,55 @@
             </div>
             <div class="navbar__buttons">
                 <a href="#" class="navbar__link"><i class="fa-solid fa-video"></i></a>
-                <a href="#" class="navbar__link"><i class="fa-solid fa-table-cells"></i></a>
-                <div class="dropdown">
+                <div class="dropdownMessages">
+                    <button onclick="myMessagesFunction()" class="dropbtn"><i
+                            class="fa-solid fa-table-cells"></i></button>
+                    <div id="myMessagesDropdown" class="dropdown-content">
+                        <div class="message">
+                            <header class="message__header">
+                                <i class="fa-regular fa-message notificationLeft"></i>
+                                <h5>Kate Stockton</h5>
+                                <i class="fa-solid fa-ellipsis-vertical notificationRight"></i>
+                            </header>
+                            <div class="message__body">
+                                <div class="message__received">
+                                    <div class="message__reciever">
+                                        <img src="assets/images/person4.jpg">
+                                    </div>
+                                    <div class="message__receiveContent">
+                                        <div class="message__receiveLine">
+                                            <p>Hey! Need to talk to you urgent, are you
+                                                free?</p>
+                                            <span>10:53</span>
+                                        </div>
+                                        <div class="message__receiveLine">
+                                            <p>Hello, are you there?</p>
+                                            <span>10:54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message__sent">
+                                    <div class="message__sentContent">
+                                        <div class="message__sentLine">
+                                            <span>11:15</span>
+                                            <p>Hmm, Can't focus...</p>
+                                        </div>
+                                    </div>
+                                    <div class="message__sender">
+                                        <img src="assets/images/person2.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="message__footer">
+                                <div class="message__type"><i class="fa-solid fa-circle-plus"></i> Type your message
+                                    here...</div>
+                                <div class="message__send"><i class="fa-solid fa-arrow-right"></i></div>
+                            </footer>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="dropdownNotifications">
                     <button class="dropbtn"><i class="fa-solid fa-bell"></i></button>
                     <div class="dropdown-content">
                         <div class="notification">
@@ -86,6 +160,8 @@
             </div>
         </div>
     </div>
+    <script src="assets/scss/js/sidebar.js"></script>
+    <script src="assets/scss/js/messages.js"></script>
 </body>
 
 </html>

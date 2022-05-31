@@ -1,6 +1,7 @@
 @import 'variables/colors';
 @import 'layout/navbar';
 @import 'layout/notifications';
+@import 'layout/messages';
 @import 'layout/sidebar';
 @import 'components/icons';
 @import 'components/buttons';
@@ -10,6 +11,6 @@ body {
 
     .container {
         width: 900px;
-        margin: 100px 250px;
+        margin: 150px 500px;
     }
 }
